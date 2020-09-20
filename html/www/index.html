@@ -4,24 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Anatomia HTML</title>
+  <title>Document</title>
 </head>
 <body>
   <header>
     <h1>Exercicios HTML</h1>
   </header>
   <nav>
-    <a href="/">Navegação</a>
-    <a href="poucocss.html">Um pouco de CSS</a>
+    <a href="exercicios/teste.html">00-teste</a>
+    <a href="exercicios/temp.html">01-Temp</a>
   </nav>
-  <section id="conteudo">
-    CONTEUDO DA PAGINA
-  </section>
-  <aside class="">
-    Lateral
-  </aside>
+  <section id="conteudo"></section>
   <footer>
-    Rodapé
+    <br>
+    Curso de WEB Moderno
   </footer>
+  <script>
+    document.querySelectorAll('a').forEach(link => {
+      const conteudo = document.getElementById('conteudo')
+
+      link.onclick = function(e){
+          e.preventDefault()
+          fetch(link.href)
+            .then(resp => resp.text())
+            .then(html => conteudo.innerHTML = html)
+      }
+    })
+  </script>
 </body>
 </html>
