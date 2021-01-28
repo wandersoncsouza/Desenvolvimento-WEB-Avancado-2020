@@ -20,3 +20,8 @@ Repositório pessoal das práticas do curso de desenvolvimento WEB da COD3R
 ![](https://img.shields.io/badge/OS-Linux-informational?style=flat&logo=linux&labelColor=05122A&logoColor=Blue&color=050F2C)
 ![React](https://img.shields.io/badge/-React-05122A?style=flat&logo=react)&nbsp;
 ![Django](https://img.shields.io/badge/-Django-05122A?style=flat&logo=django&logoColor=092E20)&nbsp;-->
+
+<strong>Dados do curso:</strong><br>
+Aulas: 266
+
+Vídeo: 34,5 horas no total&nbsp;
